@@ -1,0 +1,17 @@
+BorderPane
+1. BorderPane은 top, bottom, left, right, center 셀에 컨트롤을 배치하는 컨테이너이다.
+2. 컨트롤만 배치하는 것이 아니라 다른 컨테이너도 배치할 수 있기 때문에 다양한 레이아웃을 만들 수 있다.
+3. 주의할 점은 각 셀에는 하나의 컨트롤 또는 컨테이너만 배치할 수 있다.
+
+주요설정
+prefWidth - 폭을 설정
+prefHeight - 높이를 설정
+<top> - top에 배치될 컨트롤을 포함
+<bottom> - bottom에 배치될 컨트롤을 포함
+<right> - right에 배치될 컨트롤을 포함
+<left> - left에 배치될 컨트롤을 포함
+<center> - center에 배치될 컨트롤을 포함
+
+주의사항
+top, bottom, left, right에 컨트롤을 배치하지 않으면 center에 배치된 컨트롤이
+top, bottom, left, right까지 확장된다
