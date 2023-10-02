@@ -1,0 +1,24 @@
+HBox와 VBox는 수평과 수직으로 컨트롤을 배치하는 컨테이너
+HBox와 VBox는 자식 컨트롤의 크기를 재조정함
+HBox는 컨트롤의 높이를 확장하고, 컨트롤의 폭은 유지함
+VBox는 컨트롤의 폭을 확장하고, 컨트롤의 높이를 유지함
+HBox에서 컨트롤의 높이를 확장하고 싶지 않으면 fillHeight 속성을 false로 설정하면 됨
+VBox에서 컨트롤의 폭을 확장하고 싶지 않다면 fillWidth 속성을 false로 설정하면 됨
+
+
+ 주요설정
+ prefWidth - 폭을 설정
+ prefHeight - 높이를 설정
+ alignment - 컨트롤의 정렬을 설정
+ spacing - 컨트롤의 간격을 설정
+ fillWidth - 컨트롤의 폭 확장 여부 설정
+ fillHeight - 컨트롤의 높이 확장 여부 설정
+ <children> - 컨트롤을 포함
+ <HBox.hgrow>
+    <Priority fx:constant="ALWAYS" />
+ </HBox.hgrow>
+   - HBox의 남은 폭을 채움
+ <VBox.vgrow>
+    <Priority fx:constant="ALWAYS" />
+ </VBox.vgrow>
+   - VBox의 남은 높이를 채움
